@@ -5,17 +5,12 @@ float[] divs = new float[numberOfDIVs*numberOfParameters];
 //
 void divs() {
   //note: even-odd for width-height
-  float paperWidth = 322;
-  float paperHeight = 274;
-  divs[0] = appWidth * 72 /paperWidth;
-  divs[1] = appHeight * 74 /paperHeight;
-  divs[2] = appWidth * 80 /paperWidth;
-  divs[3] = appHeight * 147 /paperHeight;
-
-  divs[0] = appWidth * 72 /paperWidth;
-  divs[1] = appHeight * 74 /paperHeight;
-  divs[2] = appWidth * 80 /paperWidth;
-  divs[3] = appHeight * 147 /paperHeight;
+  float paperWidth = 263;
+  float paperHeight = 222;
+  divs[0] = appWidth * 25 /paperWidth;
+  divs[1] = appHeight * 27 /paperHeight;
+  divs[2] = appWidth * 212 /paperWidth;
+  divs[3] = appHeight * 121 /paperHeight;
   
   //printArray(divs);
   //rectDIV(divs[0], divs[1], divs[2], divs[3]);

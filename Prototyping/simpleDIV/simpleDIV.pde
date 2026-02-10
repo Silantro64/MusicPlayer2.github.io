@@ -1,4 +1,9 @@
 /* DIVs in Procedural VOICE
+BUTTON #1: PLAY/PAUSE/STOP
+BUTTON #2: FF/NEXT
+BUTTON #3: FR/PREVIOUS
+BUTTON #4: MUTE
+BUTTON #5: SHUFFLE
  -TBA
  */
 //
@@ -26,6 +31,7 @@ void setup() {
   appHeight = displayHeight;
   //
   divs();
+  //
 }//End Setup
 //
 void draw() {

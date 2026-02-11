@@ -1,5 +1,5 @@
 //global variables
-int numberOfDIVs = 9; // Increase the number of DIVs
+int numberOfDIVs = 14; // Increase the number of DIVs
 int numberOfParameters = 4;
 float[] divs = new float[numberOfDIVs * numberOfParameters]; // Adjust array size accordingly
 
@@ -25,45 +25,74 @@ void divs() {
   divs[9] = appHeight * 31 / paperHeight;
   divs[10] = appWidth * 100 / paperWidth;
   divs[11] = appHeight * 110 / paperHeight;
-  
+
   //DIV 4
   divs[12] = appWidth *  250 / paperWidth;
   divs[13] = appHeight * 0/ paperHeight;
   divs[14] = appWidth * 20 / paperWidth;
   divs[15] = appHeight * 20 / paperHeight;
-  
+
   //DIV 5
-  divs[16] = appWidth *  80 / paperWidth;
+  divs[16] = appWidth *  85 / paperWidth;
   divs[17] = appHeight * 175/ paperHeight;
   divs[18] = appWidth * 15 / paperWidth;
   divs[19] = appHeight * 20 / paperHeight;
-  
+
   //DIV 6
-  divs[20] = appWidth *  95 / paperWidth;
+  divs[20] = appWidth *  100 / paperWidth;
   divs[21] = appHeight * 175/ paperHeight;
   divs[22] = appWidth * 15 / paperWidth;
   divs[23] = appHeight * 20 / paperHeight;
-  
+
   //DIV 7
-  divs[24] = appWidth *  110 / paperWidth;
+  divs[24] = appWidth *  115 / paperWidth;
   divs[25] = appHeight * 175/ paperHeight;
   divs[26] = appWidth * 15 / paperWidth;
   divs[27] = appHeight * 20 / paperHeight;
-  
+
   //DIV 8
-  divs[28] = appWidth *  125 / paperWidth;
+  divs[28] = appWidth *  130 / paperWidth;
   divs[29] = appHeight * 175/ paperHeight;
   divs[30] = appWidth * 15/ paperWidth;
   divs[31] = appHeight * 20 / paperHeight;
 
+  //DIV 9
+  divs[32] = appWidth *  145 / paperWidth;
+  divs[33] = appHeight * 175/ paperHeight;
+  divs[34] = appWidth * 15/ paperWidth;
+  divs[35] = appHeight * 20 / paperHeight;
+  
+  //DIV 10
+  divs[36] = appWidth *  160 / paperWidth;
+  divs[37] = appHeight * 175/ paperHeight;
+  divs[38] = appWidth * 15/ paperWidth;
+  divs[39] = appHeight * 20 / paperHeight;
+  
+  //DIV 11
+  divs[40] = appWidth *  55 / paperWidth;
+  divs[41] = appHeight * 40 / paperHeight;
+  divs[42] = appWidth * 50 / paperWidth;
+  divs[43] = appHeight * 55 / paperHeight;
+  
+  //DIV 12
+  divs[44] = appWidth *  130 / paperWidth;
+  divs[45] = appHeight * 31/ paperHeight;
+  divs[46] = appWidth * 100 / paperWidth;
+  divs[47] = appHeight * 30 / paperHeight;
+  
+  //DIV 13
+  divs[48] = appWidth *  130 / paperWidth;
+  divs[49] = appHeight * 56/ paperHeight;
+  divs[50] = appWidth * 100 / paperWidth;
+  divs[51] = appHeight * 30 / paperHeight;
   // Draw all DIVs
-  for (int i=0;i < divs.length; i+=4) {
+  for (int i=0; i < divs.length; i+=4) {
     rectDIV(divs[i], divs[i+1], divs[i+2], divs[i+3]);
   } //end for
 }//end DIVs
 //
-void rectDIV(float x,float y,float w,float h) {
+void rectDIV(float x, float y, float w, float h) {
   //divs: dividing out the canvas in non-overlapping sections
-  rect(x,y,w,h);
+  rect(x, y, w, h);
 }
 //end subprogram DIVs

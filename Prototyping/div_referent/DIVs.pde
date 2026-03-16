@@ -9,7 +9,7 @@ void divs() {
   //Counting in Groups of 4, based on rect() object
   for ( int i=0; i<4; i++) {
     if ( i%4==0 ) {
-      divs[i] = appWidth*1/4;
+      divs[i] = appWidth*2/4;
     }
     if ( i%4==1 ) {
       divs[i] = appHeight*1/4;
@@ -25,9 +25,9 @@ void divs() {
     //int i=0; i<4; i++
   }
   printArray(divs);
-  divs[0] = appWidth*1/4 ;
-  divs[1] = appHeight*1/4 ; //i++ fails in array
-  divs[2] = appWidth*1/2 ;
+  divs[0] = appWidth*0.75/4 ;
+  divs[1] = appHeight*1.25/4; //i++ fails in array
+  divs[2] = appWidth*1.2/2 ;
   //
   //Develop a Grid based on the smallest DIV or measure
   //Music Buttons across the Width of Music Player space
@@ -143,16 +143,25 @@ void divs() {
   i++;
   divs[i] = textWidth;
   i++;
-  divs[i] = textHeight*1.15;
+  divs[i] = textHeight/2.4;
 
   i++;
   divs[i] = column6;
   i++;
-  divs[i] = row2;
+  divs[i] = row1*1.389;
   i++;
   divs[i] = textWidth;
   i++;
-  divs[i] = textHeight*1.15;
+  divs[i] = textHeight/2.4;
+  
+  i++;
+  divs[i] = column6;
+  i++;
+  divs[i] = row1*1.75;
+  i++;
+  divs[i] = textWidth;
+  i++;
+  divs[i] = textHeight/2.4;
   //
   //printArray(divs); //Inspect using printArray, println uses concatenation as an ERROR Inspection
   for ( int j=0; j<divs.length; j+=4 ) {

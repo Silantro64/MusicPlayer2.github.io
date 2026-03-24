@@ -12,10 +12,14 @@ void populationBuild() {
   int randomButtonX = 0;
   randomButtonY = 0;
   randomButtonDimension = appHeight*1/20; //Changed to SQUARE
-  //musicButtonDivX
-  musicButtonDivX[0] = randomButtonX;
-  for ( int i=1; i<musicButtonDivX.length; i++ ) {
-    musicButtonDivX[i] = buttonWidth*i;
+  int offsetX = appWidth/9;
+ musicButtonDivX[0] = randomButtonX;
+  for (int i = 1; i < musicButtonDivX.length; i++) {
+      if (i == 0) {
+      musicButtonDivX[0] = randomButtonX;
+    } else {
+      musicButtonDivX[i] = buttonWidth * i + offsetX;
+    }
   }
   //
 }//End Population Build

@@ -12,7 +12,7 @@ void populationBuild() {
   int randomButtonX = 0;
   randomButtonY = 0;
   randomButtonDimension = appHeight*1/20; //Changed to SQUARE
-  int offsetX = appWidth/9;
+  int offsetX = appWidth/10;
  musicButtonDivX[0] = randomButtonX;
   for (int i = 1; i < musicButtonDivX.length; i++) {
       if (i == 0) {
@@ -54,11 +54,11 @@ void musicSymbol( int index, float divX, float divY, float divDimension ) { //in
     drawNarrowTriangle( -1, divX, divY, divDimension );
     drawNarrowTriangle( -1, divX-smallerNum(divDimension), divY, divDimension ); //Note: subtracting, divX-smallerNum(divDimension)
   }
-  if ( index==5 ) {
+  if ( index==6 ) {
     drawRectangle( 1, divX, divY, divDimension, divDimension );
     drawRectangle( -1, divX, divY, divDimension, divDimension );
   }
-  if ( index==6 ) drawWideTriangle( divX, divY, divDimension );
+  if ( index==5 ) drawWideTriangle( divX, divY, divDimension );
  
   if ( index==7 ) {
     drawNarrowTriangle( 1, divX, divY, divDimension );

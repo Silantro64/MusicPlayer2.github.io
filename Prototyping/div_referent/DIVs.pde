@@ -7,27 +7,29 @@ void divs() {
   //
   // Primitive Style Reading, note float-arithmetic might require casting
   //Counting in Groups of 4, based on rect() object
-  for ( int i=0; i<4; i++) {
-    if ( i%4==0 ) {
-      divs[i] = appWidth*2/4;
-    }
-    if ( i%4==1 ) {
-      divs[i] = appHeight*1/4;
-    }
-    if ( i%4==2 ) {
-      divs[i] = appWidth*1/2;
-    }
-    if ( i%4==3 ) {
-      divs[i] = appHeight*1/2;
-    }
+for (int i = 0; i < 4; i++) {
+  if (i % 4 == 0) {
+    divs[i] = appWidth * 2/4;
+  }
+  if (i % 4 == 1) {
+    divs[i] = appHeight * 1/4;
+  }
+  if (i % 4 == 2) {
+    divs[i] = appWidth * 3/2; // Make the rectangle wider
+  }
+  if (i % 4 == 3) {
+    divs[i] = appHeight * 1/2;
+  }
+}
     //
     //Building 4 VARs at a time
     //int i=0; i<4; i++
-  }
+  
   printArray(divs);
-  divs[0] = appWidth*0.75/4 ;
-  divs[1] = appHeight*1.25/4; //i++ fails in array
-  divs[2] = appWidth*1.2/2 ;
+divs[0] = appWidth * 0.75/4; 
+divs[1] = appHeight * 1.25/4; 
+divs[2] = appWidth * 1.25/2; 
+divs[3] = appHeight * 1/2;
   //
   //Develop a Grid based on the smallest DIV or measure
   //Music Buttons across the Width of Music Player space
@@ -167,6 +169,15 @@ void divs() {
   divs[i] = column6;
   i++;
   divs[i] = row1*2.1;
+  i++;
+  divs[i] = textWidth;
+  i++;
+  divs[i] = textHeight/2.4;
+  
+  i++;
+  divs[i] = column6;
+  i++;
+  divs[i] = row1*2.5;
   i++;
   divs[i] = textWidth;
   i++;

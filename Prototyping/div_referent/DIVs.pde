@@ -162,6 +162,15 @@ void divs() {
   divs[i] = textWidth;
   i++;
   divs[i] = textHeight/2.4;
+  
+  i++;
+  divs[i] = column6;
+  i++;
+  divs[i] = row1*2.1;
+  i++;
+  divs[i] = textWidth;
+  i++;
+  divs[i] = textHeight/2.4;
   //
   //printArray(divs); //Inspect using printArray, println uses concatenation as an ERROR Inspection
   for ( int j=0; j<divs.length; j+=4 ) {

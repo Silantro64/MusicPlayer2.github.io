@@ -194,4 +194,18 @@ void rectDIV(float x, float y, float w, float h) {
   rect(x, y, w, h);
 }//End Rectangle Code
 //
+void seeQuitMusicButton() {
+  for ( int j=4; j<9; j+=4 ) {
+    rectDIV(divs[j], divs[j+1], divs[j+2], divs[j+3]);
+  }
+}//End See Quit & Music Button
+void seeMusicGUI() {
+  int j=0;
+  rectDIV(divs[j], divs[j+1], divs[j+2], divs[j+3]);
+  for ( j=12; j<divs.length; j+=4 ) {
+    rectDIV(divs[j], divs[j+1], divs[j+2], divs[j+3]);
+  }
+}//End See Music GUI
+//
+//
 //End DIVs

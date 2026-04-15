@@ -23,6 +23,18 @@ void setup() {
 } //End setup
 //
 void draw() {
+  //
+  //Activate Music GUI
+  //ErrorCheck("draw() Music GUI set:", musicGUI);
+  if ( musicGUI==true ) {
+    //seeMusicGUI();
+    imageDrawing( imagesPlayList[currentFile], 0 ); //imageDrawingAspectRatio
+    imageDrawingAspectRatio( imagesPlayList[currentFile], 12 ); //imageDrawing
+  } else {
+    background(0);
+  }
+  seeQuitMusicButton();
+  //
 } //End draw
 //
 void mousePressed() {
@@ -42,6 +54,11 @@ void mousePressed() {
 void keyPressed() {
   //key=='CAP' || key=='LOWER' //Note" Caps Lock
   //key==CODED || keyCode==ESC //Special Keys
+  if (key==CODED || keyCode==ESC) exit();
+  if (key=='Q' || key=='q') exit();
+  if (key=='M' || key=='m') musicGUI = varSwitch(musicGUI);
+  if (key=='N' || key=='n') currentFile = loopVar( currentFile ); //See Buttons
+  checkNum (currentFile);
 } //End Key Pressed
 Boolean varSwitch(Boolean variable) {
   if ( variable==true ) {

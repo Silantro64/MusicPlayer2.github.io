@@ -24,8 +24,7 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
-int appWidth = width; //Best Practice
-int appHeight = height;
+int appWidth, appHeight;
 Minim minim; //initates entire class
 int numberOfSongs = 3; //Best Practice
 int numberOfSoundEffects = 1; //Best Practice

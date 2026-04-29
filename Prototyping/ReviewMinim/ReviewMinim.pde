@@ -24,6 +24,8 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
 //Global Variables
+int appWidth = width; //Best Practice
+int appHeight = height;
 Minim minim; //initates entire class
 int numberOfSongs = 3; //Best Practice
 int numberOfSoundEffects = 1; //Best Practice
@@ -37,8 +39,8 @@ void setup() {
   //Display
   size(700, 500); //width //height
   //fullScreen(); //displayWidth //displayHeight
-  int appWidth = width; //Best Practice
-  int appHeight = height;
+  appWidth = width;
+  appHeight = height;
   //
   //Music Loading - STRUCTURED Review
   minim = new Minim(this); //Manditory

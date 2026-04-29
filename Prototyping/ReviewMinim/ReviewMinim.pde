@@ -53,7 +53,7 @@ void setup() {
   songName[currentSong] = "Eureka";
   currentSong++;
   songName[currentSong] = "Ghost_Walk";
-  currentSong = 0;
+  currentSong = resetDefault(currentSong);
   //
   String soundEffect1 = "Wood_Door_Open_and_Close_Series";
   String fileExtension_mp3 = ".mp3";

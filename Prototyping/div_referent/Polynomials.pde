@@ -27,5 +27,4 @@ float poly( int a, float x, int b, float y, float c, float z ) {
 void buildingRow(float[] row, float textHeight, float referent) {
   row[0] = poly( 1, divs[1], 1, referent, 0, 0 ); //divs[1] + referent
   row[1] = poly( 1, row[0], 1, textHeight, 0.5, referent ); //row[0] + textHeight + referent*1/2
-  row[2] = poly( 1, row[1], 1, referent, 0.5, referent ); //row[1] + referent + referent*1/2;
 } //End Building Rows

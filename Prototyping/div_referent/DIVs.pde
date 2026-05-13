@@ -71,7 +71,7 @@ void divs() {
         //println(a, b, (a*a)+(a*b), ((a*a)+(a*b))+1, column[b], divs[(a*a)+(a*b)], divs[ ((a*a)+(a*b)) + 1 ]);
         b++; //CAUTION: do not reset once used
       }
-    } else if ( (i%4==0 || i%4==1) && int(i/4)>=9 || int(i/4)<=13 ) {
+    } else if ( (i%4==0 || i%4==1) ) {
       while ( d<5 ) {
         divs[(c*a)+(a*d)] = column[d];
         divs[ ((c*a)+(a*d)) + 1 ] = row[2];

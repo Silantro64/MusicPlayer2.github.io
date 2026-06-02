@@ -49,20 +49,18 @@ void setup() {
   String normalFolder = "Things/";
   String soundEffectsFolder = "Sound Effects/"; //Developer Specific
   //
-  String[] songName = new String[numberOfSongs];
-  songName[currentSong] = "Cycles";
-  currentSong++;
-  songName[currentSong] = "Eureka";
-  currentSong++;
-  songName[currentSong] = "Ghost_Walk";
+   String[] songName = new String[numberOfSongs];
+  songName[0] = "Cycles";
+  songName[1] = "Eureka";
+  songName[2] = "Ghost_Walk";
   currentSong = resetDefault(currentSong);
   //
   String soundEffect1 = "Wood_Door_Open_and_Close_Series";
   String fileExtension_mp3 = ".mp3";
   //
   //Directory and Pathway
-  String musicDirectory = upArrow + upArrow + normalFolder + musicFolder; //Concatenation
-  String soundEffectsDirectory = upArrow + upArrow + normalFolder + soundEffectsFolder; //Concatenation
+  String musicDirectory = upArrow + upArrow + upArrow + normalFolder + musicFolder; //Concatenation
+  String soundEffectsDirectory = upArrow + upArrow + upArrow + normalFolder + soundEffectsFolder; //Concatenation
   //
   String pathway;
   for (String name : songName) {//for each
